@@ -1,0 +1,5 @@
+Terminal administrador
+
+cd C:\Users\Acer\Projetos\Libras\app>
+Set-ExecutionPolicy -Scope Process -ExecutionPolicy Bypass
+.\venv-libras\Scripts\activate
