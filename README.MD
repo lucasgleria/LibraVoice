@@ -145,7 +145,7 @@ Neste repositório está o projeto de extensão em python, desenvolvido por mim.
 
 ## | Fontes
 
-* [Estácio](https://estacio.br/) - Conteúdo avançado em java; Proposta inicial do projeto extensionista. 
+* [Estácio](https://estacio.br/) - Proposta inicial do projeto extensionista. 
 
 * [Tensorflow](https://www.tensorflow.org/?hl=pt-br) - Documentação oficial do Tensorflow utilizada para a utilização da principal Inteligencia artificial da aplicação.
 
