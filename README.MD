@@ -157,4 +157,4 @@ Neste repositório está o projeto de extensão em python, desenvolvido por mim.
 
 ## | Anexos
 
-* [Meu artigo](images/artigo/945b071300c316412536cb8466c390fce565f5c6fdcca48e7cf0286eb43889c3-1745625477476.pdf)
+* [Meu artigo](imagens/artigo/945b071300c316412536cb8466c390fce565f5c6fdcca48e7cf0286eb43889c3-1745625477476.pdf)
