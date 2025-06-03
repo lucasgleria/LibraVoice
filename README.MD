@@ -2,10 +2,10 @@
 
 **Sistema de tradução de Libras para voz desenvolvido em Python**  
 
-[![Licença](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)  
-[![Version](https://img.shields.io/badge/Version-2.1.2-green.svg)]()  
-[![Status](https://img.shields.io/badge/status-em%20desenvolvimento-yellow.svg)]()  
-[![Deploy](https://img.shields.io/badge/deploy-inactive-red.svg)]()  
+[![Licença](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
+[![Version](https://img.shields.io/badge/Version-2.1.2-green.svg)]()
+[![Status](https://img.shields.io/badge/status-em%20desenvolvimento-yellow.svg)]()
+[![Deploy](https://img.shields.io/badge/deploy-inactive-red.svg)]()
 
 ## 📌 Sumário
 
