@@ -1,160 +1,176 @@
-# Projeto de Extensão - Estácio
-## | Objetivos principais
+# 🤟 LibraVoice  
 
-### | Objetivos Técnicos
-* **Desenvolvimento de Software**
-    * Criar um sistema de reconhecimento de Libras via câmera
-    * Implementar conversão de gestos para texto
-    * Desenvolver funcionalidade de conversão de texto para áudio
-    * Garantir precisão na detecção e tradução dos sinais
+**Sistema de tradução de Libras para voz desenvolvido em Python**  
 
+[![Licença](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)  
+[![Version](https://img.shields.io/badge/Version-2.1.2-green.svg)]()  
+[![Status](https://img.shields.io/badge/status-em%20desenvolvimento-yellow.svg)]()  
+[![Deploy](https://img.shields.io/badge/deploy-inactive-red.svg)]()  
 
-### | Objetivos Teóricos
-* **Metodológicos**
-    * Aplicar os princípios do Scrum no desenvolvimento do projeto
-    * Implementar ciclos de SPRINTS quinzenais
-    * Utilizar cerimônias ágeis (planning, daily, review, retrospective)
-    * Desenvolver competências em gestão ágil de projetos
+## 📌 Sumário
 
-* **Acadêmicos**
-    * Aprofundar conhecimentos em desenvolvimento de software
-    * Compreender a aplicação prática de métodos ágeis
-    * Estudar técnicas de visão computacional e processamento de linguagem
+1. [Sobre o Projeto](#-sobre-o-projeto)  
+2. [Objetivos](#-objetivos)  
+3. [Tecnologias](#-tecnologias)  
+4. [Funcionalidades](#-funcionalidades)  
+5. [Pré-requisitos](#-pré-requisitos)  
+6. [Instalação](#-instalação)  
+7. [Como utilizar](#-como-utilizar)
+8. [Estrutura do Projeto](#-estrutura-do-projeto)
+9. [Contribuição](#-contribuição)  
+10. [Licença](#-licença)  
+11. [Contato](#-contato)  
+12. [Recursos Adicionais](#-recursos-adicionais)  
 
+## 💻 Sobre o Projeto  
 
-### | Objetivos Práticos
-* **Sociais**
-    * Promover inclusão comunicacional entre pessoas surdas e cegas
-    * Facilitar o acesso ao mercado de trabalho para PcD
-    * Melhorar o acesso à educação e serviços básicos
-    * Impactar positivamente entre 20 a 30 pessoas na fase inicial
+O **LibraVoice** é um projeto de extensão acadêmica que utiliza visão computacional e processamento de linguagem natural para criar uma ponte comunicacional entre pessoas surdas e ouvintes
 
-* **Organizacionais**
-    * Estabelecer processo de desenvolvimento organizado e previsível
-    * Reduzir retrabalho e atrasos no desenvolvimento
-    * Implementar ciclos de feedback com usuários reais
-    * Manter documentação clara e estruturada do projeto
+- **Motivação**: Carência social de sistemas faciliadores de comunicação
+- **Público-alvo**: Bancada Avaliativa, Estudantes de Programação, Comunidade de Desenvolvimento e PCDs 
+- **Problema resolvido**: Barreira de comunicação entre surdos e ouvintes
+- **Diferencial**: Conversão simultânea para texto e voz  
+- **Metodologia**: Desenvolvimento ágil com Scrum  
 
+## 🎯 Objetivos  
 
-### | Objetivo Final
-Entregar o protótipo de um software funcional e acessível que sirva como ponte de comunicação entre pessoas com diferentes necessidades, desenvolvido através de metodologias ágeis e validado por usuários reais.
+### 🛠️ Técnicos  
+- Desenvolver sistema de reconhecimento de gestos em tempo real  
+- Implementar pipeline completo: gesto → texto → voz  
+- Alcançar precisão mínima de 85% na detecção  
 
+### 📚 Acadêmicos  
+- Aplicar conceitos de visão computacional e IA
+- Implementar metodologias ágeis na prática  
+- Documentar processo de desenvolvimento  
 
-## | O Projeto: LibraVoice.
+### 🌍 Sociais  
+- Promover inclusão de pessoas com deficiência auditiva  
+- Facilitar acesso a serviços básicos e educação  
+- Impactar inicialmente 20-30 usuários  
 
-Neste repositório está o projeto de extensão em python, desenvolvido por mim.
+## 🚀 Tecnologias  
 
-* Público Alvo: _Bancada Avaliativa_
-* Tema do software: Tecnologia que traduz Libras em voz
-* Disponiblizamos: Acesso completo.
+**Núcleo do Sistema**  
+- Python
+- Matplotlib
+- Tensorflow
+- MediaPipe
+- Joblib
 
-## | O que encontrarei nesse software?
-* Arquivo requirements.txt
+**Processamento de Imagem**  
+- OpenCV
+- Pillow
+- Numpy
 
-    * Funcionalidade:
-    Lista de todas as bibliotecas utilizadas.
-    
-### | Pasta: app
+## ✨ Funcionalidades  
 
-* Arquivos nomeados data_collector...py
+- ✅ **Reconhecimento de Libras:** Captura de gestos via câmera e conversão em tempo real para texto em tempo real. 
+- ✅ **Conversão Texto-Áudio (TTS):** Transformação do texto reconhecido em fala, permitindo a comunicação auditiva.
+- ✅ **Scripts de Coleta de Dados:** Ferramentas para a coleta e preparação de dados, essenciais para o treinamento e aprimoramento dos modelos de IA.
+- ✅ **Modelos de IA Pré-treinados:** Utilização de dados estáticos e dinâmicos para garantir o funcionamento preciso da inteligência artificial.
+- ✅ **Scripts de Treinamento de Modelo:** Ferramentas para a geração e atualização dos modelos de IA (model.pkl, sequence_model.h5, label_map.npy).
 
-    * Funcionalidade:
-    Coletar dados, foram os scripts utilizados para treinar o programa.
+## ⚙️ Pré-requisitos  
 
-* Arquivo tts.py
+Para executar o projeto localmente, você precisará de:
 
-    * Funcionalidade:
-    Converter o texto para áudio.
+- Python: Uma versão compatível (recomenda-se a versão 3.9.9 ou mais recente).
+- Câmera: Uma câmera funcional conectada ao seu computador para a captura de gestos.
+- Bibliotecas Python: Todas as dependências listadas no requirements.txt.
+- Uma IDE (Visual Studio Code, PyCharm, etc.) para desenvolvimento e execução.
+- Armazenamento livre mínimo: 4GB+ RAM e 2GB+ disco   
 
-* Arquivo main.py
+## 🛠️ Instalação  
 
-    * Funcionalidade:
-    Script raiz do programa, ele captura imagem, converte em texto e devolve uma resposta em áudio utilizando intligencia artificial.
-    
-### | Pasta: datasets
+1. Clone o repositório:
+```bash
+git clone https://github.com/seu-usuario/LibraVoice.git
+```
 
-* Pasta data
+2. Navegue até o diretório do projeto:
+```bash
+cd LibraVoice
+```
 
-    * Funcionalidade:
-    Armazenar dados pré-treinados estáticos.
+3. (Opcional recomendável) Crie e ative um ambiente virtual:
+> É altamente recomendado usar um ambiente virtual para gerenciar as dependências.
+```bash
+# No Windows
+python -m venv venv
+.\venv\Scripts\activate
+# ou # No macOS/Linux
+source venv/bin/activate
+```
 
-* Pasta data-seq
+4. Instale as dependências:
+```bash
+pip install -r requirements.txt
+```
 
-    * Funcionalidade:
-    Armazenar dados pré-treinados dinâmicos.
+## ❗ Como Utilizar
 
-### | Pasta: models
+1. Inicie o programa:
+```bash
+python app/main.py
+```
 
-* Arquivos model.py e train_sequence_model.py
+2. Interaja com a câmera:
+Posicione-se em frente à câmera para que o sistema possa capturar seus gestos em Libras.
 
-    * Funcionalidade:
-    Scripts de treinamento de modelo, foram utilizados para gerar o arquivo de modelo model.pkl, sequence_model.h5 e label_map.npy.
-    
-    
-## | Detalhes
+3. Observe a tradução:
+O sistema exibirá a tradução em texto e reproduzirá a resposta em áudio, utilizando inteligência artificial.
+> Ps: Apenas algumas Letras do alfabeto foram treinadas nesse modelo. (L,U,C,A,S,J,W)
+### ▶️ Demonstração
 
-### | Bibliotecas utilizadas:
-> absl-py==2.2.2\
-> attrs==25.3.0\
-> cffi==1.17.1\
-> contourpy==1.3.1\
-> cycler==0.12.1\
-> flatbuffers==25.2.10\
-> fonttools==4.57.0\
-> jax==0.5.3\
-> jaxlib==0.5.3\
-> kiwisolver==1.4.8\
-> matplotlib==3.10.1\
-> mediapipe==0.10.21\
-> ml_dtypes==0.5.1\
-> numpy==1.26.4\
-> opencv-contrib-python==4.11.0.86\
-> opencv-python==4.11.0.86\
-> opt_einsum==3.4.0\
-> packaging==24.2\
-> pillow==11.1.0\
-> protobuf==4.25.6\
-> pycparser==2.22\
-> pyparsing==3.2.3\
-> python-dateutil==2.9.0.post0\
-> scipy==1.15.2\
-> sentencepiece==0.2.0\
-> six==1.17.0\
-> sounddevice==0.5.1
+![Exemplo](https://raw.githubusercontent.com/gist/TheJLifeX/74958cc59db477a91837244ff598ef4a/raw/088f3995801c58f79f0a79086f1cd4cc176396d3/00-hand-gesture-recognition.gif)
 
+*(GIF meramente ilustrativo)*  
 
-## | Tecnologias Utilizadas
+## 📂 Estrutura do Projeto  
 
-**Desenvolvimento da Aplicação**
+```plaintext
+LibraVoice/
+├── app/                    # Contém a lógica principal do software
+│   ├── data_collector...py # Scripts para coleta de dados de treinamento
+│   ├── tts.py              # Script para conversão de texto para áudio (Text-to-Speech)
+│   └── main.py             # Script principal: captura imagem, converte para texto e gera áudio
+├── datasets/               # Armazena dados utilizados pelos modelos
+│   ├── data/               # Dados pré-treinados estáticos
+│   └── data-seq/           # Dados pré-treinados dinâmicos
+├── models/                 # Contém os scripts e arquivos dos modelos de IA
+│   ├── model.py            # Script de treinamento do modelo principal
+│   ├── train_sequence_model.py # Script de treinamento do modelo de sequência
+│   └── (arquivos de modelo gerados: model.pkl, sequence_model.h5, label_map.npy)
+├── .gitignore              # Arquivo de ignorar para controle de versão
+├── LICENSE                 # Licença MIT
+├── README.md               # Este arquivo
+└── requirements.txt        # Lista de bibliotecas Python utilizadas
+```
 
-[![Python](https://img.shields.io/badge/python-FFFFFF?style=for-the-badge&logo=python&logoColor=000)](https://python.com/)
-[![tensorflow](https://img.shields.io/badge/tensorflow-FFFFFF?style=for-the-badge&logo=tensorflow&logoColor=000)](https://www.tensorflow.org/?hl=pt-br)
-[![mediapipe](https://img.shields.io/badge/mediapipe-FFFFFF?style=for-the-badge&logo=mediapipe&logoColor=000)](https://ai.google.dev/edge/mediapipe/solutions/guide?hl=pt-br)
-[![numpy](https://img.shields.io/badge/numpy-FFFFFF?style=for-the-badge&logo=numpy&logoColor=000)](https://numpy.org)
-[![Opencv](https://img.shields.io/badge/Opencv(cv2)-FFFFFF?style=for-the-badge&logo=opencv&logoColor=000)](https://docs.opencv.org/4.x/)
+## 🤝 Contribuição
+Contribuições são bem-vindas! Siga estas etapas:
 
-**Manipulação, controle e hospedagem de dados e versões**
+1. Reporte bugs: Abra uma [issue](https://github.com/lucasgleria/LibraVoice/issues) no GitHub.
+2. Sugira melhorias: Envie ideias ou pull requests com novas funcionalidades.
+3. Desenvolva:
+- Faça um fork do projeto.
+- Crie uma branch (git checkout -b feature/nova-funcionalidade).
+- Envie um Pull Request.
 
-[![GitHub](https://img.shields.io/badge/GitHub-FFFFFF?style=for-the-badge&logo=github&logoColor=000)](https://docs.github.com/)
-[![Git](https://img.shields.io/badge/Git-FFFFFF?style=for-the-badge&logo=git&logoColor=000)](https://git-scm.com/doc)
+## 📜 Licença  
 
+Distribuído sob licença MIT. Veja [LICENSE](LICENSE) para mais informações. 
 
-## | Equipe
+## 📞 Contato
+- **Autor**: [Lucas Leria](https://github.com/lucasgleria)
+- **LinkedIn**: [lucasgleria](https://www.linkedin.com/in/lucasgleria/)
 
-* [Lucas Gomes Leria](https://www.linkedin.com/in/lucasleria/) - Desenvolvedor UX e Programador Fullstack.
+## 🔎 Recursos Adicionais  
 
-## | Fontes
+- [Documentação TensorFlow](https://www.tensorflow.org/)  
+- [Soluções MediaPipe](https://ai.google.dev/mediapipe)  
+- [OpenCV para Python](https://docs.opencv.org/)  
+- [Artigo do Projeto](imagens/artigo/artigo.pdf)  
 
-* [Estácio](https://estacio.br/) - Proposta inicial do projeto extensionista. 
-
-* [Tensorflow](https://www.tensorflow.org/?hl=pt-br) - Documentação oficial do Tensorflow utilizada para a utilização da principal Inteligencia artificial da aplicação.
-
-* [Mediapipe](https://ai.google.dev/edge/mediapipe/solutions/guide?hl=pt-br) - Documentação oficial do Google mediapipe utilizada para o desenvolvimento da aplicação.
-
-* [Numpy](https://numpy.org) - Documentação oficial do Numpy utilizada para o desenvolvimento da aplicação.
-
-* [OpenCv](https://docs.opencv.org/4.x/) - Documentação oficial da segunda IA utilizada para o desenvolvimento da aplicação.
-
-## | Anexos
-
-* [Meu artigo](imagens/artigo/945b071300c316412536cb8466c390fce565f5c6fdcca48e7cf0286eb43889c3-1745625477476.pdf)
+> Projeto acadêmico desenvolvido como trabalho de extensão da [Estácio](https://estacio.br/)
